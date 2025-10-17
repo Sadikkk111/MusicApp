@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="play_music">Play</string>
+    <string name="pause_music">Pause</string>
+    <string name="previous_song">Previous Song</string>
+    <string name="next_song">Next Song</string>
+    <string name="show_playlist">Show Playlist</string>
+    <string name="show_lyrics">Show Lyrics</string>
+    <string name="adjust_volume">Adjust Volume</string>
+    <string name="share_song">Share Song</string>
+</resources>
