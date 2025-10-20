@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="album_art">Album art</string>
+    <string name="app_name">Music App</string>
+    <string name="artist_name">Queen</string>
+    <string name="current_time">1:00</string>
+    <string name="next_song">Next song</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="previous_song">Previous song</string>
+    <string name="remaining_time">3:00</string>
+    <string name="share_song">Share song</string>
+    <string name="song_title">Bohemian Rhapsody</string>
+    <string name="view_lyrics">View lyrics</string>
+    <string name="view_queue">View queue</string>
+    <string name="volume">Volume</string>
+    <style name="Base.Theme.MusicApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MusicApp" parent="Base.Theme.MusicApp"/>
+</resources>

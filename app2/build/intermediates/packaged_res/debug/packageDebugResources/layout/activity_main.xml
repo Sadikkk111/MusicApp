@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+        <ImageView
+            android:id="@+id/albumArt"
+            android:layout_width="340dp"
+            android:layout_height="351dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/album_shadow"
+            android:contentDescription="@string/album_art"
+            android:elevation="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/album_cover" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/controls_background"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/songTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BOHEMIAN RHAPSODY"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="none"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/artistName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Queen"
+                android:textColor="#E0B0FF"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <SeekBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="25"
+                android:max="100"
+                android:progressTint="#BB86FC"
+                android:thumbTint="#FFFFFF"
+                android:layout_marginBottom="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/currentTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="1:00"
+                    android:textColor="#E0B0FF"
+                    android:textSize="12sp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/remainingTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="-3:00"
+                    android:textColor="#E0B0FF"
+                    android:textSize="12sp"
+                    android:gravity="end"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageButton
+                    android:id="@+id/prevButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Previous song"
+                    android:src="@android:drawable/ic_media_previous"
+                    app:tint="#FFFFFF" />
+
+                <ImageButton
+                    android:id="@+id/playPauseButton"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:src="@drawable/play"
+                    android:background="@drawable/play_button_background"
+                    android:contentDescription="Play/Pause"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    app:tint="#6200EE" />
+
+                <ImageButton
+                    android:id="@+id/nextButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Next song"
+                    android:src="@android:drawable/ic_media_next"
+                    app:tint="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/volume"
+                    android:contentDescription="Volume"
+                    android:layout_marginEnd="8dp"
+                    app:tint="#BB86FC" />
+
+                <SeekBar
+                    android:id="@+id/volumeBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:progress="70"
+                    android:max="100"
+                    android:progressTint="#BB86FC"
+                    android:thumbTint="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/shareButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="@drawable/circle_button_background"
+                    android:contentDescription="Share song"
+                    android:layout_marginEnd="16dp"
+                    app:tint="#FFFFFF" />
+
+                <ImageButton
+                    android:id="@+id/lyricsButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/lyrics"
+                    android:background="@drawable/circle_button_background"
+                    android:contentDescription="View lyrics"
+                    android:layout_marginEnd="16dp"
+                    app:tint="#FFFFFF" />
+
+                <ImageButton
+                    android:id="@+id/queueButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/queue"
+                    android:background="@drawable/circle_button_background"
+                    android:contentDescription="View queue"
+                    app:tint="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
